@@ -208,4 +208,4 @@ def handle_message(user: User, msg):
     asyncio.run(ipc_client.send(msg, user))
 
 if __name__ == '__main__':
-    socketio.run(app, host="127.0.0.1", port=5000)
+    socketio.run(app, host="0.0.0.0", port=5000)
